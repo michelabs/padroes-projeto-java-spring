@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import one.digitalinnovation.gof.model.Endereco;
 
-<<<<<<< HEAD
 /**
  * Client HTTP, criado via <b>OpenFeign</b>, para o consumo da API do <b>ViaCEP</b>.
  * 
@@ -16,15 +15,10 @@ import one.digitalinnovation.gof.model.Endereco;
  * @author michelabs
  */
 
-=======
->>>>>>> 70afef37fe8d4f169b0fbf5b97688dc098a666da
 @FeignClient(name = "viacep", url = "https://viacep.com.br/ws")
 public interface ViaCepService {
 
 	@GetMapping("/{cep}/json/")
 	Endereco consultarCep(@PathVariable("cep") String cep);
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 70afef37fe8d4f169b0fbf5b97688dc098a666da
+
